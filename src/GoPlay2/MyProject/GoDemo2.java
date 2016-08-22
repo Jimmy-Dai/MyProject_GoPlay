@@ -5,6 +5,8 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -110,10 +112,17 @@ public class GoDemo2 {
 				gb.repaint();
 			}
 		});
+		jf.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
 		// 确定窗体大小
 		jf.add(gb);
 		jf.pack();
 		UiUtil.setFrameCenter(jf);
+		jf.setResizable(false);
 		jf.setVisible(true);
 	}
 
