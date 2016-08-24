@@ -9,3 +9,11 @@
 内容：
 	MyPlay2——5Play  tag2.0
 	JFrame&JPanel型
+	
+时间：
+	2016年8月24日15:23:01
+内容：
+	MyPlay3——5Play  tag3.0
+	增加了判断下棋输赢
+计划：
+	下一版增加机器人思考
